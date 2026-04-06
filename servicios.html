@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RUTA DIGITAL | Páginas Web Profesionales</title>
+    <style>
+        :root {
+            --fondo: #0a0a0b;
+            --primario: #00d4ff; /* Azul neón */
+            --secundario: #7000ff; /* Morado neón */
+            --texto: #ffffff;
+            --gris: #1c1c1e;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            background-color: var(--fondo);
+            color: var(--texto);
+            line-height: 1.6;
+        }
+
+        /* --- ENCABEZADO --- */
+        header {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at top, var(--secundario) 0%, var(--fondo) 70%);
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: -1px;
+            background: linear-gradient(to right, #fff, var(--primario));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: #ccc;
+            margin-top: 10px;
+        }
+
+        /* --- TARJETAS DE SERVICIOS --- */
+        .servicios {
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: var(--gris);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--primario);
+            transform: translateY(-5px);
+        }
+
+        .card h3 { color: var(--primario); margin-top: 0; }
+
+        /* --- BOTÓN WHATSAPP --- */
+        .cta-container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .btn-ws {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            text-decoration: none;
+            padding: 18px 35px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: inline-block;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+            transition: 0.3s;
+        }
+
+        .btn-ws:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.5);
+        }
+
+        /* --- INFO Y HORARIOS --- */
+        .footer-info {
+            background: #000;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+
+        .horario-badge {
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--primario);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid var(--primario);
+        }
+
+        footer {
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>RUTA DIGITAL</h1>
+        <p class="tagline">Transformamos tu negocio físico en una potencia digital.</p>
+    </header>
+
+    <section class="servicios">
+        <div class="card">
+            <h3>Negocios Locales</h3>
+            <p>Creamos la página para tu dulcería, tienda o local con ubicación en Google Maps integrada.</p>
+        </div>
+        <div class="card">
+            <h3>Catálogos Digitales</h3>
+            <p>Muestra tus productos (como audífonos o tecnología) con botones de venta directa a WhatsApp.</p>
+        </div>
+        <div class="card">
+            <h3>Diseño Adaptable</h3>
+            <p>Tu página se verá increíble tanto en computadoras como en celulares de cualquier gama.</p>
+        </div>
+    </section>
+
+    <div class="cta-container">
+        <h2>¿Listo para empezar tu proyecto?</h2>
+        <p>Haz clic abajo para cotizar tu página web ahora mismo.</p>
+        <a href="https://wa.me/522225673684?text=Hola,%20me%20interesa%20cotizar%20una%20página%20web" class="btn-ws">
+            🚀 Contactar por WhatsApp
+        </a>
+    </div>
+
+    <div class="footer-info">
+        <p><strong>Soporte y Ventas:</strong></p>
+        <span class="horario-badge">Abierto de 8:00 AM a 12:00 PM</span>
+        <p style="margin-top:20px;">Puebla, México | Servicio a todo el país</p>
+    </div>
+
+    <footer style="text-align: center;">
+        &copy; 2026 Contreras Digital Studio.
+    </footer>
+
+</body>
+</html>
